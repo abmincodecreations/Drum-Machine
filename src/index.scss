@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap');
+
+$dark-background:#000a0e;
+*{
+  box-sizing: border-box;
+}
+body{
+  height: fit-content;
+  top: 0;
+  left:0 ;
+  background-color:$dark-background ;
+  color:whitesmoke;
+}
+.h4{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-size: 5px;
+}
+.container{
+  top: 0;
+  left:0 ;
+  display: flex;
+  background-color:$dark-background;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  }
+  @media only screen and (max-width: 900px) {
+    .container{
+      padding-bottom: 1vh;
+      padding-top: 5vh;
+    }
+  }
+  h3{
+    position: relative;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    margin-bottom: -5px;
+    font-size: 50px;
+  }
+
+.display{
+  box-shadow: 2px 1px 2px 4px  rgb(17, 17, 17);
+  border: 2px  rgb(214, 198, 198);
+  border-style:outset;
+  margin-top: 10vh;
+  background-color: rgb(80, 55, 55);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap ;
+  width: 350px;
+}
+.box{
+  box-shadow: 2px 1px 2px 4px  rgb(17, 17, 17);
+  background-color: rgb(227, 230, 220);
+  display: flex;
+  justify-content: center;
+  border: 5px  rgb(214, 198, 198);
+  border-style:outset;
+  color: #242B2E;
+  font-size: 60px;
+  border-radius:4px;
+  margin:6px;
+  width: 100px;
+  height: 100px;
+}
+.footertext{
+  text-align: right;
+  color:rgb(158, 155, 155);
+  position:fixed;
+  width: 98vw;
+  left: 0px;
+  bottom:0px;
+  font-size: 15px;
+  
+}
+.no-decoration{
+  text-decoration: none;
+  color:rgb(121, 120, 120);
+}
+.drum-box{
+  box-shadow: 2px 1px 2px 4px  rgb(17, 17, 17);
+  border: 5px  rgb(223, 223, 193);
+  border-style:outset;
+  border-radius:4px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: rgb(90, 75, 75);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+
+.control-drum{
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+ 
+}
+.text-display{
+  display: block;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+}
+.volume-slider {
+  align-content: center;
+  display: flex;
+  width:40vw;
+}
+.slider{
+  width:90%;
+}
+.slider:hover {
+  background-color: darkblue;
+}
+.outer-select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+.control{
+  margin-top: 20px;
+}
+.inner-select {
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.control p{
+  font-size: 14px;
+  margin: -1px;
+  text-align: center;
+} 
+.select {
+  @extend .outer-select;
+  padding-top: -10px;
+  .inner {
+    @extend .inner-select;
+    border: 3px  rgb(4, 4, 116);
+    border-style:outset;
+  }
+}
+.power-button{
+  position: relative;
+  margin-left: 3rem;
+  
+}
+.active{
+
+  opacity: 0.8;
+  animation-name: bottonToogle;
+  animation-duration: 0.2s;
+}
+
+@keyframes bottonToogle{
+  0%{
+   width: 100px;
+   height: 100px;
+  }
+  50%{
+    width: 95px;
+    height: 95px;
+  }
+  100%{
+    width: 100px;
+    height:100px;
+
+  }
+  
+}
