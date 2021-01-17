@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# [Drum Machine](https://abmincodecreations.github.io/Drum-Machine/)
+Technologies used to develop this application
++ React js
++ SASS
++ JSX
++ BOOTSTRAP 
++ React icons
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
