@@ -5,6 +5,7 @@ $dark-background:#000a0e;
   box-sizing: border-box;
 }
 body{
+  width: 100vw;
   height: fit-content;
   top: 0;
   left:0 ;
@@ -19,17 +20,23 @@ body{
   font-size: 5px;
 }
 .container{
+  position: fixed;
+  margin: 5px;
+
+  width: fit-content;
   top: 0;
   left:0 ;
   display: flex;
   background-color:$dark-background;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
   flex-direction: column;
+  padding-bottom: 15vh;
   }
   @media only screen and (max-width: 900px) {
     .container{
+      width:97vw;
       padding-bottom: 1vh;
       padding-top: 5vh;
     }
@@ -54,6 +61,13 @@ body{
   flex-wrap: wrap ;
   width: 350px;
 }
+@media only screen and (max-width: 600px) {
+  .display{
+    margin-top: 50vh;
+    width: 95%;
+  }
+}
+
 .box{
   box-shadow: 2px 1px 2px 4px  rgb(17, 17, 17);
   background-color: rgb(227, 230, 220);
@@ -68,6 +82,12 @@ body{
   width: 100px;
   height: 100px;
 }
+@media only screen and (max-width: 600px) {
+  .box{
+    width: 24vw;
+    height: 24vw;
+  }
+}
 .footertext{
   text-align: right;
   color:rgb(158, 155, 155);
@@ -80,7 +100,7 @@ body{
 }
 .no-decoration{
   text-decoration: none;
-  color:rgb(121, 120, 120);
+  color:rgb(199, 182, 182);
 }
 .drum-box{
   box-shadow: 2px 1px 2px 4px  rgb(17, 17, 17);
@@ -96,7 +116,11 @@ body{
   user-select: none; /* Standard syntax */
 
 }
-
+@media only screen and (max-width: 600px) {
+  .drum-box{
+    width: 90vw;
+  }
+}
 .control-drum{
   display: flex;
   align-items: center;
@@ -105,7 +129,7 @@ body{
 }
 .text-display{
   display: block;
-  height: 80px;
+  height: 75px;
   background-color: rgb(0, 0, 0);
 }
 .volume-slider {
@@ -114,6 +138,7 @@ body{
   width:40vw;
 }
 .slider{
+  
   width:90%;
 }
 .slider:hover {
@@ -180,4 +205,27 @@ body{
 
   }
   
+}
+@media only screen and (max-width: 600px) {
+  .active{
+    opacity: 0.8;
+    animation-name: bottonToogle;
+    animation-duration: 0.2s;
+  }
+  @keyframes bottonToogle{
+    0%{
+     width: 22vh;
+     height: 22vh;
+    }
+    50%{
+      width: 21vh;
+      height: 21vh;
+    }
+    100%{
+      width: 22vh;
+      height:22vh;
+  
+    }
+    
+  }
 }
