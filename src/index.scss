@@ -12,6 +12,9 @@ body{
   background-color:$dark-background ;
   color:whitesmoke;
 }
+#container-box{
+width:100vw;
+}
 
 @media only screen and (min-width: 600px) {
   #drum-machine{
@@ -53,10 +56,10 @@ button :active {
     font-size: 15px;
   }
 }
-.container{
-  position: fixed;
+.containerr{
+  position: relative;
   margin: 5px;
-  width: fit-content;
+  width: 100vw;
   top: 0;
   left:0 ;
   display: flex;
@@ -67,12 +70,14 @@ button :active {
   flex-direction: column;
   padding-bottom: 15vh;
   }
+
   @media only screen and (max-width: 900px) {
     .container{
-      overflow-y: scroll;
-      width:97vw;
+      overflow-y: auto;
+      width:100vw;
       padding-bottom: 1vh;
       padding-top: 5vh;
+      height: fit-content;
     }
   }
   h3{
