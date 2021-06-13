@@ -12,6 +12,35 @@ body{
   background-color:$dark-background ;
   color:whitesmoke;
 }
+
+@media only screen and (min-width: 600px) {
+  #drum-machine{
+    margin-top: 80px;
+    margin-left: 10px;
+    }
+}
+
+.nav-btn{
+  background-color: rgb(255, 236, 70);
+  position: fixed;
+  top:0;
+  left: 0;
+  color: black;
+  z-index: 100;
+}
+button{
+  background-color: black;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px;
+  margin: 7px;
+  cursor: pointer;
+}
+button :active {
+  transform: scale(0.5);
+}
+
 .h4{
   display: block;
   text-align: center;

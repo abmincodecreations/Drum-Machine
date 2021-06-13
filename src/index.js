@@ -194,6 +194,8 @@ class App extends React.Component{
       });
     
     return (
+    <div>
+       <a  href="https://abmincodecreations.github.io/"><button class="nav-btn" ><i class="fas fa-home">Home</i></button></a>
     <div id="drum-machine" className="container " >
     <div className="drum-box d-flex  flex-column flex-md-row flex-lg-row flex-xl-row mt-2" >
             <div id="display" className="display m-2">
@@ -230,14 +232,14 @@ class App extends React.Component{
           <div className='footer-bar mt-4'>
             <p className="footertext">
               <a className="no-decoration" href="https://github.com/abmincodecreations">
-                &copy;Designed By Abhishek Mishra
+                &copy;Designed and Developed by Abhishek Mishra
               </a>
              </p>
           </div>
   </div>
   </div>
   </div>
-  
+  </div>
     );
   }
 }
